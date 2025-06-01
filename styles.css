@@ -235,3 +235,7 @@ section p {
 nav a.active {
   font-weight: bold;
 }
+
+.bold {
+  font-weight: bold;
+}

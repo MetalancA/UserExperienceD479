@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Taniti - FAQs</title>
   <link rel="stylesheet" href="../styles.css">
-  <link rel="icon" type="../image/png" href="images/logo.svg">
+  <link rel="icon" type="image/png" href="../images/logo.svg">
 
 </head>
 <body>
@@ -16,10 +16,10 @@
         <img src="../images\logo.svg" alt="Logo">
     </div>
 <nav>
-  <a href="/">Home</a>
-  <a href="../amenities/">Amenities</a>
-  <a href="../faq/">FAQs</a>
-  <a href="../contact/">Contact</a>
+ <a class="nav-link" href="..">Home</a>
+  <a class="nav-link" href="../amenities/">Amenities</a>
+  <a class="nav-link" href="../faq/">FAQs</a>
+  <a class="nav-link" href="../contact/">Contact</a>
 </nav>
   </header>
 
@@ -40,6 +40,53 @@
  
 
   <section class="amenities" id="amenities">
+
+     <div class="cards mb35">
+    <div class="card">
+      <h3>What kind of power outlets does Taniti use?</h3>
+      <p>Power outlets are 120 volts, the same as in the United States.</p>
+    </div>
+    <div class="card">
+      <h3>Are there restrictions on alcohol sales?</h3>
+      <p>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</p>
+    </div>
+    <div class="card">
+      <h3>What is the legal drinking age on Taniti?</h3>
+      <p>The drinking age is 18, though it is not strictly enforced.</p>
+    </div>
+  </div>
+
+  <div class="cards mb35">
+    <div class="card">
+      <h3>Is English widely spoken?</h3>
+      <p>Many younger Tanitians speak fluent English. However, in rural areas, especially among older residents, very little English is spoken.</p>
+    </div>
+    <div class="card">
+      <h3>What kind of medical facilities are available?</h3>
+      <p>There is one hospital and several clinics. The hospital has many multilingual employees to assist international visitors.</p>
+    </div>
+    <div class="card">
+      <h3>Is Taniti safe for tourists?</h3>
+      <p>Violent crime is very rare. However, petty crimes like pickpocketing have increased slightly with the rise in tourism.</p>
+    </div>
+  </div>
+
+  <div class="cards mb35">
+    <div class="card">
+      <h3>Should I be aware of national holidays?</h3>
+      <p>Taniti observes many national holidays. Tourist attractions and restaurants may be closed, so visitors should plan accordingly.</p>
+    </div>
+    <div class="card">
+      <h3>What currency is used on Taniti?</h3>
+      <p>Taniti uses the U.S. dollar, but many businesses also accept euros and yen. Several banks offer currency exchange, and major credit cards are widely accepted.</p>
+    </div>
+        <div class="card">
+      <h3>Is there a difference between euros, yen and U.S. Dollars?</h3>
+      <p>Yes, check with your local bank if you have any questions.</p>
+    </div>
+  </div>
+
+
     <div class="cards mb35">
       <div class="card">
         <h3>Where is Taniti located?</h3>
@@ -85,13 +132,29 @@
       <div class="logo">        <img src="../images\logo.svg" alt="Logo">
 </div>
       <nav>
-        <a href="/">Home</a>
-        <a href="amenities">Amenities</a>
-        <a href="faq">FAQs</a>
-        <a href="contact">Contact</a>
+ <a class="nav-link" href="..">Home</a>
+  <a class="nav-link" href="../amenities/">Amenities</a>
+  <a class="nav-link" href="../faq/">FAQs</a>
+  <a class="nav-link" href="../contact/">Contact</a>
       </nav>
     </div>
   </footer>
+
+  <script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    const linkPath = new URL(link.href, window.location.origin).pathname;
+
+    // Check if current path ends with the link's path
+    if (currentPath === linkPath || currentPath.endsWith(linkPath + '/')) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+
 
 </body>
 </html>
