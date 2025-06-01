@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+p, h2 {
+  margin-bottom: 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #7e9ff7;
+  padding: 10px 20px;
+}
+
+ nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+.hero {
+  height: 500px;
+  background: url('images/masthead.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 50px;
+  background-position: 50% 70%;
+}
+
+.hero h1 {
+  font-size: clamp(50px, 6vw, 75px);
+  font-weight: bold;
+}
+
+.hero p {
+  margin-bottom: 35px;
+}
+
+.title-md {
+  font-size: clamp(35px, 5vw, 55px);
+  font-weight: bold;
+}
+
+.amenities {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.amenities .cards {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+}
+
+ 
+.img-placeholder img {
+ width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-placeholder img:hover {
+  transition: 0.1s all;
+  border: 5px solid black;
+}
+
+.click-banner {
+  height: 200px;
+  background: #7e9ff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+}
+
+.click-banner .overlay-text {
+  font-size: 35px;
+  font-weight: bold;
+
+}
+.click-banner a {
+  text-decoration: none;
+  color: black;
+}
+
+.faq-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-box {
+  width: 500px;
+   height: 500px;
+
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.faq {
+  max-width: 400px;
+}
+
+.newsletter-promo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.text-block {
+  max-width: 300px;
+}
+
+.blog {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.blog .cards {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin-top: 20px;
+}
+
+
+.blog .cards img {
+  max-height: 200px;
+}
+
+footer {
+  background: #f4f4f4;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+ input {
+    padding: 10px;
+    margin-right: 10px;
+    border-top: 1px solid black;
+    border-radius: 10px;
+}
+.footer-newsletter a:hover {
+  cursor: pointer;
+}
+
+.footer-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+
+.logo img {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.button {
+  transition: all 0.4s ease;
+  background: none;
+  border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover {
+  transition: all 0.4s ease;
+  background: rgb(144, 159, 226);
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+section p {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb35 {
+  margin-bottom: 35px;
+}
+
+nav a.active {
+  font-weight: bold;
+}
